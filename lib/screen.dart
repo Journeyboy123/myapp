@@ -19,34 +19,32 @@ class _ScreenState extends State<Screen> {
           Text("Malls"),
           Text("Restaurants"),
           Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(Icons.star),
+              Icon(Icons.star),
+              Icon(Icons.star),
+              Text("178 Reviews"),
+            ],
+          ),
+          Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Column(children: [
-                Text("ABC"),
                 Icon(Icons.star),
-                Icon(Icons.star),
-                Icon(Icons.star),
-                Icon(Icons.star),
-                Icon(Icons.star),
+                Text("Hotels"),
+                Text("10:15 min"),
               ]),
               Column(children: [
-                Text("XYZ"),
                 Icon(Icons.star),
-                Icon(Icons.star),
-                Icon(Icons.star),
-                Icon(Icons.star),
-                Icon(Icons.star),
+                Text("Parks"),
+                Text("11:00 min"),
               ]),
-              Column(
-                children: [
-                  Text("TQR"),
-                  Icon(Icons.star),
-                  Icon(Icons.star),
-                  Icon(Icons.star),
-                  Icon(Icons.star),
-                  Icon(Icons.star),
-                ],
-              )
+              Column(children: [
+                Icon(Icons.star),
+                Text("Restaurants"),
+                Text("11:00 min"),
+              ]),
             ],
           )
         ],
